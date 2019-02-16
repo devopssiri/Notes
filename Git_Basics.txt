@@ -1,0 +1,64 @@
+Admin@Admin-PC MINGW64 /d/Work/Text_Git
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+Admin@Admin-PC MINGW64 /d/Work/Text_Git
+$ git init
+Initialized empty Git repository in D:/Work/Text_Git/.git/
+
+Admin@Admin-PC MINGW64 /d/Work/Text_Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@Admin-PC MINGW64 /d/Work/Text_Git (master)
+$ git add .
+
+Admin@Admin-PC MINGW64 /d/Work/Text_Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   txt.txt
+
+
+Admin@Admin-PC MINGW64 /d/Work/Text_Git (master)
+$ git commit -m "test"
+[master (root-commit) c178186] test
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 txt.txt
+
+Admin@Admin-PC MINGW64 /d/Work/Text_Git (master)
+$ git remote add origin https://github.com/devopssampath/git.git
+
+Admin@Admin-PC MINGW64 /d/Work/Text_Git (master)
+$ git push -u origin master
+Username for 'https://github.com': devops@123
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass'
+Password for 'https://devops@123@github.com':       1 [sig] bash 3940! sigpacket::process: Suppressing signal 18 to win32 process (pid 3596)
+
+Admin@Admin-PC MINGW64 /d/Work/Text_Git (master)
+$ git push -u origin master
+Username for 'https://github.com': devopssampath  <After this command it should ask for the password> 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 210 bytes | 210.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/devopssampath/git.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Admin@Admin-PC MINGW64 /d/Work/Text_Git (master)
+$
