@@ -1,0 +1,45 @@
+AWS
+
+https://aws.amazon.com/
+
+01. Sign in and Navigage to AWS Management Console
+
+02. In the find Services type 'Instances' and choose EC2
+
+03. Choose 'Launch Instances' under 'Create Instances'
+
+04. Choose 'Amazon Machine Image (AMI)' Select the 'Free tier eligible' options only, other options are Chargeable. (We have chosen 'Red Hat Enterprise Linux 7.6 (HVM)' and clicked the select button)
+
+05. Choose 'Instance Type' Here again the type should be 't2 micro' which is Free Tier eligible' Click on 'Next Configure Instance Details'
+
+06. Choose 'Configure Instance' Leave the information available as default and click 'Next: Add Storage'
+
+07. Add Storage Click 'Next: Add Tags'
+
+08. Add Tags Click 'Next: Configure Security Group'
+
+09. Configure Security Group Click 'Review and Launch'
+
+10. Review Click 'Launch'
+
+11. It should ask for Key Pair - Whether to create a new key or use an existing key.
+
+	We choose to create a new key here, assign it with a name and download the same.
+	
+12. After downloading the key open 'Puttygen' Tool and select 'Load' and load the new key that was downloaded.
+
+13. This would import the  .pem file and create a Private key. Save this Private key as .ppk file.
+
+14. Now click 'Launch Instances' in AWS browser window.
+
+15. Once the instance gets launched then the instance state would be marked as running.
+
+16. Now select the instance and click on the 'Connect' which would give a popup.
+
+17. Now select example connect script shown in the popup and copy the same.
+
+18. Open Putty and  paste the selected content in host name.
+
+19. From the Category in the left side of the window goto 'Connection' and select 'SSH' there and goto 'Auth'. Browse for the new ppk key and select the same and finally click 'Open'
+
+20. Now the server should get launched.
